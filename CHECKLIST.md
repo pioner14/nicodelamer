@@ -10,7 +10,7 @@
 - [x] Домен nicodelamer.com куплен в Porkbun, подключён к GitHub Pages, HTTPS включён
 - [x] Search Console: подтверждён (файл google2e1e8f63331e13aa.html — не удалять), sitemap отправлен 24.11.2026 (статус «не получено» сразу после отправки — проверить позже)
 - [x] Bing Webmaster Tools: подтверждён (аккаунт nicodelamer.producer@gmail.com, метатег msvalidate.01 в index.html — не удалять), sitemap отправлен 24.11.2026
-- [ ] Search Console сейчас под pioner14@gmail.com — по желанию добавить nicodelamer.producer@gmail.com владельцем (Настройки → Пользователи)
+- [x] Search Console: владелец pioner14@gmail.com, nicodelamer.producer@gmail.com добавлен с полным доступом (владельцем можно стать, подтвердив сайт со своего аккаунта тем же файлом)
 
 ## Решения
 - [ ] Политика для AI-краулеров в `robots.txt` (пример закомментирован)
