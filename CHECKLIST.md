@@ -7,8 +7,9 @@
 - [ ] FAQ — только из ваших слов (сейчас нет)
 
 ## Домен
-- [ ] Купить домен → `python3 tools/set-domain.py https://...`
-- [ ] Search Console, Bing Webmaster Tools
+- [x] Домен nicodelamer.com куплен в Porkbun, подключён к GitHub Pages, HTTPS включён
+- [x] Search Console: подтверждён (файл google2e1e8f63331e13aa.html — не удалять), sitemap отправлен 24.11.2026 (статус «не получено» сразу после отправки — проверить позже)
+- [ ] Bing Webmaster Tools
 
 ## Решения
 - [ ] Политика для AI-краулеров в `robots.txt` (пример закомментирован)
