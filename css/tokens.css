@@ -1,0 +1,49 @@
+/* Дизайн-токены: единственное место, где живут цвета, шрифты и отступы.
+   Источник — макет Stitch (design/). Меняйте значения здесь. */
+
+/* ШРИФТЫ (самохостинг, лицензия OFL, подмножество latin — покрывает французский). */
+@font-face { font-family: "Montserrat"; font-weight: 200 400; font-style: normal; font-display: swap;
+  src: url("/assets/fonts/montserrat-var-latin.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-weight: 300 500; font-style: normal; font-display: swap;
+  src: url("/assets/fonts/inter-var-latin.woff2") format("woff2"); }
+
+:root {
+  color-scheme: dark;
+
+  /* Цвета */
+  --c-bg: #0c1020;          /* dusk */
+  --c-surface: #121830;     /* карточки */
+  --c-surface-2: #181f3b;
+  --c-text: #fff4e6;        /* cream */
+  --c-text-muted: #c4bdb8;  /* контраст на фоне ≈ 9:1 */
+  --c-text-faint: #a39da3;  /* контраст на фоне ≈ 7:1 */
+  --c-accent: #ff9a4d;      /* sunset */
+  --c-accent-ink: #0c1020;  /* текст на кнопке акцента */
+  --c-accent-2: #e5708f;    /* rose */
+  --c-line: rgb(255 244 230 / 0.14);
+
+  /* Шрифты */
+  --f-display: "Montserrat", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --f-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* Размеры */
+  --fs-body: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  --fs-small: 0.875rem;
+  --fs-h1: clamp(2.1rem, 1rem + 6vw, 5.5rem);
+  --fs-h2: clamp(1.6rem, 1.2rem + 2vw, 2.5rem);
+  --fs-h3: clamp(1.25rem, 1rem + 1.2vw, 2rem);
+
+  --track-wide: 0.25em;
+  --track-cinema: 0.35em;
+
+  /* Сетка и отступы */
+  --gutter: 1rem;
+  --max-w: 72rem;
+  --space-section: clamp(4rem, 3rem + 6vw, 8rem);
+  --radius: 4px;
+  --header-h: 4rem;
+}
+
+@media (min-width: 48em) {
+  :root { --gutter: 2rem; --header-h: 5rem; }
+}

@@ -1,0 +1,9 @@
+# Внутренние файлы, не для публикации
+design/
+DATA_FOR_CLAUDE.md
+HANDOFF.md
+prompt-claude.md
+prompt-stitch.md
+stitch-prompt-paste.txt
+stitch_nico_de_la_mer_portfolio.zip
+.claude/

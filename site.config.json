@@ -1,0 +1,5 @@
+{
+  "domain": "https://example.com",
+  "name": "Nico de la Mer",
+  "note": "Домен меняется командой: python3 tools/set-domain.py https://ваш-домен.com (см. README.ru.md)"
+}
