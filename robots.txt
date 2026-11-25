@@ -3,7 +3,7 @@ Allow: /
 
 Sitemap: https://nicodelamer.com/sitemap.xml
 
-# TODO(owner): политика для AI-краулеров — решение за владельцем.
+# Политика для AI-краулеров: разрешено всем (решение владельца).
 # Пример (раскомментируйте, чтобы ЗАПРЕТИТЬ):
 # User-agent: GPTBot
 # Disallow: /
