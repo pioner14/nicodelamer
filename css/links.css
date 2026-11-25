@@ -23,7 +23,7 @@
     border-radius: 50%;
     padding: 3px;
     background: linear-gradient(135deg, var(--c-accent), var(--c-accent-2));
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 10px 30px var(--c-shadow);
     margin-bottom: 1.25rem;
   }
   .avatar-img {
@@ -76,23 +76,23 @@
     font-size: 0.95rem;
     font-weight: 500;
     transition: all 0.2s ease;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 12px var(--c-shadow);
   }
   .link-btn:hover, .link-btn:focus-visible {
     transform: translateY(-2px);
     background: var(--c-surface-2);
     border-color: var(--c-accent);
-    color: #ffffff;
-    box-shadow: 0 6px 20px rgba(255, 154, 77, 0.25);
+    color: var(--c-text);
+    box-shadow: 0 6px 20px color-mix(in srgb, var(--c-accent) 25%, transparent);
   }
   .link-btn.featured {
-    background: linear-gradient(135deg, rgba(255, 154, 77, 0.15), var(--c-surface));
-    border-color: rgba(255, 154, 77, 0.5);
+    background: linear-gradient(135deg, color-mix(in srgb, var(--c-accent) 15%, transparent), var(--c-surface));
+    border-color: color-mix(in srgb, var(--c-accent) 50%, transparent);
     color: var(--c-accent);
   }
   .link-btn.featured:hover {
-    background: linear-gradient(135deg, rgba(255, 154, 77, 0.3), var(--c-surface-2));
-    color: #ffffff;
+    background: linear-gradient(135deg, color-mix(in srgb, var(--c-accent) 30%, transparent), var(--c-surface-2));
+    color: var(--c-text);
   }
   .back-to-site {
     margin-top: 1rem;

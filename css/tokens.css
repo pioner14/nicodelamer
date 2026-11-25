@@ -8,19 +8,29 @@
   src: url("/assets/fonts/inter-var-latin.woff2") format("woff2"); }
 
 :root {
-  color-scheme: dark;
+  color-scheme: light dark;
 
-  /* Цвета */
-  --c-bg: #0c1020;          /* dusk */
-  --c-surface: #121830;     /* карточки */
-  --c-surface-2: #181f3b;
-  --c-text: #fff4e6;        /* cream */
-  --c-text-muted: #c4bdb8;  /* контраст на фоне ≈ 9:1 */
-  --c-text-faint: #a39da3;  /* контраст на фоне ≈ 7:1 */
-  --c-accent: #ff9a4d;      /* sunset */
-  --c-accent-ink: #0c1020;  /* текст на кнопке акцента */
-  --c-accent-2: #e5708f;    /* rose */
-  --c-line: rgb(255 244 230 / 0.14);
+  /* Цвета: light-dark(светлая, тёмная). Тема берётся из системы; переключатель
+     в шапке ставит data-theme="light" или "dark" на <html>. */
+  --c-bg: light-dark(#fff4e6, #0c1020);
+  --c-surface: light-dark(#ffffff, #121830);     /* карточки */
+  --c-surface-2: light-dark(#fbe9d6, #181f3b);
+  --c-text: light-dark(#0c1020, #fff4e6);
+  --c-text-muted: light-dark(#454359, #c4bdb8);  /* контраст ≥ 7:1 */
+  --c-text-faint: light-dark(#5c5a6e, #a39da3);  /* контраст ≥ 6:1 */
+  --c-accent: light-dark(#a84300, #ff9a4d);      /* sunset */
+  --c-accent-hover: light-dark(#c24f08, #ffab68);
+  --c-accent-ink: light-dark(#fff4e6, #0c1020);  /* текст на кнопке акцента */
+  --c-accent-2: light-dark(#b03560, #e5708f);    /* rose */
+  --c-line: light-dark(rgb(12 16 32 / 0.16), rgb(255 244 230 / 0.14));
+  --c-tag-line: light-dark(rgb(12 16 32 / 0.35), rgb(255 244 230 / 0.3));
+  --c-header-bg: light-dark(rgb(255 244 230 / 0.88), rgb(12 16 32 / 0.85));
+  --c-glow: light-dark(rgb(168 67 0 / 0.2), rgb(255 154 77 / 0.12));
+  --c-shadow: light-dark(rgb(60 30 10 / 0.2), rgb(0 0 0 / 0.45));
+  --hero-sun: light-dark(rgb(255 154 77 / 0.5), rgb(255 154 77 / 0.35));
+  --hero-rose: light-dark(rgb(229 112 143 / 0.3), rgb(229 112 143 / 0.22));
+  --hero-top: light-dark(#ffe9d2, #0c1020);
+  --hero-mid: light-dark(#ffd7b8, #1a1a3a);
 
   /* Шрифты */
   --f-display: "Montserrat", "Segoe UI", system-ui, -apple-system, sans-serif;
@@ -43,6 +53,9 @@
   --radius: 4px;
   --header-h: 4rem;
 }
+
+:root[data-theme="light"] { color-scheme: light; }
+:root[data-theme="dark"] { color-scheme: dark; }
 
 @media (min-width: 48em) {
   :root { --gutter: 2rem; --header-h: 5rem; }
